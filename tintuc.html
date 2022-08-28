@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tin tức - HeadPhone Store</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tintuc.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Apple", "Xiaomi", "Beats", "Oppo", "Sony", "JBL"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addHeader(); </script>
+    
+    <section style="min-height: 85vh">
+        <script> addTopNav();</script>
+
+        <div class="body-tintuc">
+            <div class="tintuc-info">
+                <a href="#" target="_blank">
+                    <img src="img/tintuc/tintuc1.jpg">
+                    <h2>Đánh giá Campfire Andromeda 2020: Mẫu tai nghe đi cùng năm tháng của Campfire Audio</h2>
+                </a>
+                <br/>
+                <h5>Doanh ngiệp &emsp;3 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="#" target="_blank">
+                    <img src="img/tintuc/tintuc2.jpg">
+                    <h2>Đánh giá Fiil T1 Lite: Phiên bản rút gọn của đàn anh Fiil T1 Pro</h2>
+                </a>
+                <br/>
+                <h5>Thanh niên &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="#" target="_blank">
+                    <img src="img/tintuc/tintuc3.jpg">
+                    <h2>Đánh giá Tribit XFree Go: Hoàn thiện chắc chắn, Kết nối ổn định, Chất âm cực hay trong tầm 1 triệu</h2>
+                </a>
+                <br/>
+                <h5>VOV &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="#" target="_blank">
+                    <img src="img/tintuc/tintuc4.jpg">
+                    <h2>Đánh giá Campfire Audio Holocene: Dành cho những người chơi yêu dải trung tinh tế chi tiết</h2>
+                </a>
+                <br/>
+                <h5>VietQ &emsp; 9 giờ</h5>
+            </div>
+            <div class="tintuc-info" style="border-bottom: 0;">
+                <a href="#" target="_blank">
+                    <img src="img/tintuc/tintuc5.jpg" height="148px" width="224px;">
+                    <h2>Đánh giá Campfire Audio Mammoth: Chiếc tai nghe dành cho người chơi yêu thích âm thanh V-Shaped</h2>
+                </a>
+                <br/>
+                <h5>Zing &emsp; 13 giờ</h5>
+            </div> 
+
+        </div>
+
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>

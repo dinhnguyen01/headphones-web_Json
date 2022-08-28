@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giới thiệu - HeadPhone Store</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+        
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gioithieu.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Apple", "Xiaomi", "Beats", "Oppo", "Sony", "JBL"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addHeader(); </script>
+    
+    <section style="min-height: 85vh">
+        <script> addTopNav();</script>
+
+        <div class="page-gt">
+            <h4 class="page-header">
+                Giới thiệu - Tin tức công nghệ
+            </h4>
+            <div class="page-info">
+                <p>Được thành lập từ năm 2001, chúng tôi là một trong những nhà phân phối ĐTDĐ đầu tiên tại Nam Định và
+                    kể từ năm 2010, chúng tôi chính thức trở thành nhà phân phối ĐTDĐ lớn duy nhất
+                    tại xã Nghĩa Lạc.
+                </p>
+                <br />
+                <p>
+                    Đã bao giờ bạn tự hỏi nếu một ngày không có điện thoại, laptop hay những đồ công nghệ khác, 
+                    cuộc sống sẽ ra sao? Chúng ta vẫn thường coi công nghệ như một điều thiết yếu của cuộc sống và 
+                    nghĩ rằng những sự thay đổi đó là do con người. Nhưng có ý kiến cho rằng “Con người từng ngày thay 
+                    đổi công nghệ nhưng chính công nghệ cũng đang thay đổi cuộc sống con người”. Phải chăng công nghệ đang 
+                    ngày ngày chi phối, định hướng hành vi, thói quen không chỉ của cá nhân mà cả cộng đồng hay nhiều thế hệ.
+                    <br />
+                    <br />
+                    Trong thời đại hiện nay, vẫn cần thiết phát triển công nghệ. Tuy nhiên, việc sử dụng công nghệ cần tiết chế,
+                    phù hợp. Các cơ quan chức năng cần tăng cường sự quản lý, sử dụng công nghệ để phục vụ cho mục đích lành mạnh, 
+                    cộng đồng. Và mỗi người cũng cần cân bằng giữa việc sử dụng công nghệ và thực hiện trách nhiệm với cộng đồng, gia đình.
+                    Hãy để công nghệ trở thành công cụ một cách phù hợp và hiệu quả với cuộc sống của chúng ta.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>
